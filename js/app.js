@@ -1,4 +1,7 @@
-// Initialize
+const Store = {
+    lists: [],
+    tasks: []
+  };
 
 $(function() { // on document ready
   listController = new ListsController();
