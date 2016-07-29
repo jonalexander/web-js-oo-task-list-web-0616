@@ -13,10 +13,15 @@ class ListsController {
       event.preventDefault()
       console.log('List Submit Working')
 
-      let title = $('input#list_title').val()
-      var list = new List(title)
+      //build list
+      var list = new List($('input#list_title').val())
       list.build()
 
+      //show task form
+      $('form#add_task').show()
+
+      //clear title field
+      $('input#list_title').val("")
     })
   }
 }

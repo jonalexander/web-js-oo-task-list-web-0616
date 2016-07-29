@@ -1,4 +1,4 @@
-var Task = (function() {
+const Task = (function() {
   var counter = 0
 
   return class {
@@ -7,7 +7,14 @@ var Task = (function() {
       this.description = description
       this.priority = priority
       this.list_id = list_id
-      store.tasks.push(this)
+      console.log("item create" + this.description)
+      Store.tasks.push(this)
     }
-  }
+
+    // build() {
+    //   let listContainers = $('#lists').children()
+    //   for (let i = 0; i < listContainers.length, i++) {
+    //     console.log(listContainers[i].val());
+    //   }
+  }//class
 }())

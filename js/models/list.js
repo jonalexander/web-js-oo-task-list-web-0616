@@ -22,10 +22,10 @@ const List = (function() {
     renderDropdown() {
       var select = document.getElementById('select_list')
       var lists = Store.lists
-      var listObj = lists[lists.length - 1]
+      //var listObj = lists[lists.length - 1]
       var optionTag = document.createElement("option")
-      optionTag.textContent = listObj.title
-      optionTag.value = listObj
+      optionTag.textContent = this.title
+      optionTag.value = this
       select.appendChild(optionTag)
     }
   }//close return class
